@@ -1,0 +1,579 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #2b1712;
+    color: #f5e8df;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #170c09;
+    padding: 22px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #b83a2f;
+}
+
+header h1 {
+    margin: 0;
+    color: #b83a2f;
+}
+
+nav a {
+    color: #f5e8df;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #b83a2f;
+}
+
+main {
+    text-align: center;
+}
+
+section {
+    padding: 100px 20px;
+    min-height: 300px;
+}
+
+#home {
+    background-color: #3a2119;
+}
+
+h2 {
+    font-size: 40px;
+    color: #c74638;
+}
+
+p {
+    font-size: 18px;
+}
+
+.knop,
+button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 25px;
+    background-color: #b83a2f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.knop:hover,
+button:hover {
+    background-color: #8f2d25;
+}
+
+form {
+    max-width: 450px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+
+input,
+select {
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #170c09;
+    text-align: center;
+    padding: 25px;
+}
+
+#fotos {
+    background-color: #2b1712;
+    text-align: center;
+}
+
+.foto-categorieën {
+    max-width: 1100px;
+    margin: 40px auto 0;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.foto-blok {
+    flex: 1;
+    background-color: #3a2119;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #5c2b20;
+}
+
+.foto-blok h3 {
+    color: #c74638;
+    font-size: 24px;
+}
+
+.foto-plaats {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #170c09;
+    color: #f5e8df;
+    border-radius: 8px;
+}
+
+@media (max-width: 700px) {
+    .foto-categorieën {
+        flex-direction: column;
+    }
+}
+.diensten-container {
+    max-width: 1000px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.dienst {
+    background-color: #3a2119;
+    border: 1px solid #5c2b20;
+    border-radius: 10px;
+    padding: 25px 15px;
+}
+
+.dienst h3 {
+    color: #f5e8df;
+    font-size: 20px;
+    margin: 0 0 15px;
+}
+
+.dienst p {
+    color: #c74638;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    .diensten-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .diensten-container {
+        grid-template-columns: 1fr;
+    }
+}#home {
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: #3a2119;
+}
+
+.welkom {
+    color: #c74638;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+#home h2 {
+    font-size: 60px;
+    margin: 0 0 15px;
+    color: #f5e8df;
+}
+
+.slogan {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.adres {
+    color: #c9aaa0;
+    font-size: 17px;
+}
+
+#home .knop {
+    margin-top: 30px;
+}#openingsuren {
+    background-color: #1f100c;
+    text-align: center;
+}
+
+.uren-container {
+    max-width: 650px;
+    margin: 40px auto 0;
+}
+
+.uur {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 20px;
+    border-bottom: 1px solid #5c2b20;
+    font-size: 17px;
+}
+
+.uur strong {
+    color: #c74638;
+}
+
+@media (max-width: 500px) {
+    .uur {
+        font-size: 15px;
+        padding: 14px 5px;
+    }
+}.contact-kaart {
+    max-width: 500px;
+    margin: 35px auto 0;
+    padding: 30px;
+    background-color: #3a2119;
+    border: 1px solid #5c2b20;
+    border-radius: 10px;
+}
+
+.contact-label {
+    color: #c74638;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.contact-kaart .email,
+.contact-kaart .telefoon {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.bel-knop {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 28px;
+    background-color: #b83a2f;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.bel-knop:hover {
+    background-color: #8f2d25;
+}
+/* HOME EXTRA EFFECTEN */
+
+#home {
+    position: relative;
+    overflow: hidden;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 1px solid #b83a2f;
+    border-radius: 50%;
+    top: -100px;
+    right: -80px;
+    opacity: 0.25;
+}
+
+#home::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border: 1px solid #b83a2f;
+    border-radius: 50%;
+    bottom: -90px;
+    left: -60px;
+    opacity: 0.2;
+}
+
+#home h2 {
+    letter-spacing: 1px;
+}
+
+#home .knop {
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#home .knop:hover {
+    transform: translateY(-3px);
+}/* SCROLL ANIMATIES */
+
+#status-vandaag {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 18px;
+    background-color: #3a2119;
+    border: 1px solid #5c2b20;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 15px;
+}.gemaakt-door {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #9b766c;
+}
+
+.gemaakt-door:hover {
+    color: #c74638;
+    transition: 0.3s;
+}/* PRODUCTEN */
+
+#producten {
+    background-color: #2b1712;
+}
+
+.producten-container {
+    max-width: 1000px;
+    margin: 40px auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product {
+    background-color: #3a2119;
+    border: 1px solid #5c2b20;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.product-foto {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #170c09;
+    border-radius: 8px;
+    color: #9b766c;
+}
+
+.product h3 {
+    color: #f5e8df;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.product-prijs {
+    color: #c74638;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+    .producten-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .producten-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* WINKELMANDJE */
+
+#winkelmandje-knop {
+    margin-left: 25px;
+    margin-top: 0;
+    padding: 10px 16px;
+    font-size: 14px;
+}
+
+#mandje-aantal {
+    background-color: #c74638;
+    padding: 2px 7px;
+    border-radius: 50%;
+    margin-left: 4px;
+}
+
+.winkelmandje {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 350px;
+    max-width: 90%;
+    height: 100%;
+    background-color: #170c09;
+    border-left: 2px solid #b83a2f;
+    padding: 30px;
+    box-sizing: border-box;
+    z-index: 1000;
+    transition: right 0.3s ease;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.winkelmandje.open {
+    right: 0;
+}
+
+#mandje-sluiten {
+    float: right;
+    margin: 0;
+    padding: 8px 12px;
+}
+
+.winkelmandje h2 {
+    clear: both;
+    font-size: 28px;
+    margin-top: 50px;
+}
+
+.mandje-totaal {
+    border-top: 1px solid #5c2b20;
+    padding-top: 20px;
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+#bestellen-knop {
+    width: 100%;
+    margin-top: 25px;
+    position: relative;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    #winkelmandje-knop {
+        margin-left: 0;
+    }
+
+    .winkelmandje {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+#bestelling-formulier input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 15px;
+    margin: 8px 0 18px;
+    background-color: #2b1712;
+    color: #f5e8df;
+    border: 1px solid #6b352a;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+#bestelling-formulier input:focus {
+    border-color: #b83a2f;
+}
+
+#bestelling-formulier label {
+    display: block;
+    margin-top: 8px;
+    font-weight: bold;
+}
+.product-foto {
+    width: 100%;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.product-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+   }
+
+   .kapsel-fotos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+.kapsel-fotos img,
+.salon-fotos img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+    cursor: pointer;
+}
+
+#foto-popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#foto-popup.open {
+    display: flex;
+}
+
+#foto-popup img {
+    max-width: 90%;
+    max-height: 85%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+#foto-popup-sluiten {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    margin: 0;
+    padding: 8px 14px;
+    font-size: 24px;
+}
+.salon-fotos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.salon-fotos img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    cursor: pointer;
+}

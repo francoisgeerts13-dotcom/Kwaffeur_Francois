@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwaffeur Francois</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Kwaffeur Francois</h1>
+
+    <nav>
+    <a href="#home">Home</a>
+    <a href="#diensten">Diensten</a>
+    <a href="#fotos">Ons salon</a>
+    <a href="#openingsuren">Openingsuren</a>
+    <a href="#afspraak">Afspraak maken</a>
+    <a href="#contact">Contact</a>
+    <a href="#locatie">Vind ons</a>
+    <a href="#producten">Onze producten</a>
+<button id="winkelmandje-knop" type="button">
+    🛒 Mandje <span id="mandje-aantal">0</span>
+</button>
+</nav>
+</header>
+
+<main>
+
+    <section id="home">
+    <p class="welkom">WELKOM BIJ</p>
+
+    <h2>Kwaffeur Francois</h2>
+
+    <p class="slogan">Herenkapsalon in Ekeren</p>
+
+    <p class="adres">Steenstraat 24 · 2180 Ekeren</p>
+
+    <a href="#afspraak" class="knop">Maak een afspraak</a>
+</section>
+
+
+    <section id="diensten">
+    <h2>Diensten & prijzen</h2>
+
+    <div class="diensten-container">
+
+        <div class="dienst">
+            <h3>Knippen</h3>
+            <p>€25</p>
+        </div>
+
+        <div class="dienst">
+            <h3>Knippen & wassen</h3>
+            <p>€30</p>
+        </div>
+
+        <div class="dienst">
+            <h3>Baard scheren</h3>
+            <p>€15</p>
+        </div>
+
+        <div class="dienst">
+            <h3>Lotion</h3>
+            <p>€5</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="fotos">
+    <h2>Ons salon</h2>
+
+    <div class="foto-categorieën">
+
+        <div class="foto-blok">
+            <h3>Kapsels</h3>
+            <div class="foto-plaats kapsel-fotos">
+    <img src="images/davidd.jpeg" alt="Kapsel">
+    <img src="images/david2.jpeg" alt="Kapsel">
+    <img src="images/dirk.jpeg" alt="Kapsel">
+    <img src="images/dirk2.jpeg" alt="Kapsel">
+    <img src="images/karel.jpeg" alt="Kapsel">
+    <img src="images/karel2.jpeg" alt="Kapsel">
+    <img src="images/xenoo.jpeg" alt="Kapsel">
+    <img src="images/younes.jpeg" alt="Kapsel">
+</div>
+        </div>
+
+        <div class="foto-blok">
+            <h3>Het salon</h3>
+           <div class="foto-plaats salon-fotos">
+    <img src="images/salonplant.jpeg" alt="Salon">
+    <img src="images/salonraam.jpeg" alt="Salon">
+    <img src="images/salonvooraanzicht.jpeg" alt="Salon">
+</div>
+        </div>
+
+        
+        </div>
+
+    </div>
+</section>
+
+<section id="openingsuren">
+    <div id="status-vandaag"></div>
+    <h2>Openingsuren</h2>
+
+    <div class="uren-container">
+        <div class="uur"><span>Maandag</span><strong>Gesloten</strong></div>
+        <div class="uur"><span>Dinsdag</span><strong>08:00 – 18:00</strong></div>
+        <div class="uur"><span>Woensdag</span><strong>Gesloten</strong></div>
+        <div class="uur"><span>Donderdag</span><strong>08:00 – 18:00</strong></div>
+        <div class="uur"><span>Vrijdag</span><strong>08:00 – 18:00</strong></div>
+        <div class="uur"><span>Zaterdag</span><strong>08:00 – 12:00</strong></div>
+        <div class="uur"><span>Zondag</span><strong>Gesloten</strong></div>
+    </div>
+</section>
+
+
+    <section id="afspraak">
+        <h2>Maak een afspraak</h2>
+
+        <form>
+
+            <label for="naam">Naam</label>
+            <input type="text" id="naam" name="naam" required>
+
+            <label for="telefoon">Telefoonnummer</label>
+            <input type="tel" id="telefoon" name="telefoon" required>
+
+            <label for="datum">Datum</label>
+            <input type="date" id="datum" name="datum" required>
+
+            <label for="tijd">Uur</label>
+
+            <select id="tijd" name="tijd" required>
+                <option value="">Kies een uur</option>
+                <option>08:00</option>
+                <option>08:30</option>
+                <option>09:00</option>
+                <option>09:30</option>
+                <option>10:00</option>
+                <option>10:30</option>
+                <option>11:00</option>
+                <option>11:30</option>
+                <option>12:00</option>
+                <option>12:30</option>
+                <option>13:00</option>
+                <option>13:30</option>
+                <option>14:00</option>
+                <option>14:30</option>
+                <option>15:00</option>
+                <option>15:30</option>
+                <option>16:00</option>
+                <option>16:30</option>
+                <option>17:00</option>
+                <option>17:30</option>
+            </select>
+
+            <button type="submit">Afspraak aanvragen</button>
+
+        </form>
+    </section>
+
+
+    <section id="contact">
+    <h2>Contact</h2>
+
+    <div class="contact-kaart">
+
+        <p class="contact-label">E-mail</p>
+        <p class="email">francois.geerts1@telenet.be</p>
+
+        <p class="contact-label">Telefoon</p>
+        <p class="telefoon">0475 64 15 17</p>
+
+        <a href="tel:0475641517" class="bel-knop">Bel ons</a>
+
+    </div>
+</section>
+
+<section id="locatie">
+    <h2>Vind ons</h2>
+
+    <p>Steenstraat 24 · 2180 Ekeren</p>
+
+    <a href="https://www.google.com/maps/search/?api=1&query=Steenstraat+24%2C+2180+Ekeren"
+       target="_blank"
+       class="bel-knop">
+        Bekijk route
+    </a>
+</section>
+<section id="producten">
+    <h2>Onze producten</h2>
+
+    <p>Ontdek de producten die in het salon verkrijgbaar zijn.</p>
+
+    <div class="producten-container">
+
+    <div class="product">
+        <div class="product-foto">
+            <img src="images/273A6069-EE35-45BC-A075-6D633C8FF830_1_105_c.jpeg" alt="Freezing oil shampoo">
+        </div>
+        <h3>Freezing Oil Shampoo</h3>
+        <p class="product-prijs">€14,00</p>
+        <button class="bestel-product" data-naam="Freezing Oil Shampoo" data-prijs="14" type="button">
+            In winkelmandje
+        </button>
+    </div>
+
+    <div class="product">
+        <div class="product-foto">
+            <img src="images/273A6069-EE35-45BC-A075-6D633C8FF830_1_105_c.jpeg" alt="Freezing oil shampoo 1 liter">
+        </div>
+        <h3>Freezing Oil Shampoo – 1 liter</h3>
+        <p class="product-prijs">€40,00</p>
+        <button class="bestel-product" data-naam="Freezing Oil Shampoo – 1 liter" data-prijs="40" type="button">
+            In winkelmandje
+        </button>
+    </div>
+
+    <div class="product">
+        <div class="product-foto">
+            <img src="images/mildshampoo.jpeg" alt="Freezing mild shampoo">
+        </div>
+        <h3>Freezing Mild Shampoo</h3>
+        <p class="product-prijs">€14,00</p>
+        <button class="bestel-product" data-naam="Freezing Mild Shampoo" data-prijs="14" type="button">
+            In winkelmandje
+        </button>
+    </div>
+
+    <div class="product">
+        <div class="product-foto">
+            <img src="images/silvershampoo.jpeg" alt="Freezing silver lock shampoo">
+        </div>
+        <h3>Freezing Silver Lock Shampoo</h3>
+        <p class="product-prijs">€15,50</p>
+        <button class="bestel-product" data-naam="Freezing Silver Lock Shampoo" data-prijs="15.50" type="button">
+            In winkelmandje
+        </button>
+    </div>
+
+    <div class="product">
+        <div class="product-foto">
+            <img src="images/silvershampoo.jpeg" alt="Freezing silver lock shampoo 1 liter">
+        </div>
+        <h3>Freezing Silver Lock Shampoo – 1 liter</h3>
+        <p class="product-prijs">€45,00</p>
+        <button class="bestel-product" data-naam="Freezing Silver Lock Shampoo – 1 liter" data-prijs="45" type="button">
+            In winkelmandje
+        </button>
+    </div>
+
+    <div class="product">
+        <div class="product-foto">
+            <img src="images/lotion3.jpeg" alt="PH Stabilizer Lotion">
+        </div>
+        <h3>PH Stabilizer Lotion</h3>
+        <p class="product-prijs">€15,00</p>
+        <button class="bestel-product" data-naam="PH Stabilizer Lotion" data-prijs="15" type="button">
+            In winkelmandje
+        </button>
+    </div>
+
+    <div class="product">
+        <div class="product-foto">
+            <img src="images/alpecin.jpeg" alt="Alpecin Forte">
+        </div>
+        <h3>Alpecin Forte</h3>
+        <p class="product-prijs">€15,00</p>
+        <button class="bestel-product" data-naam="Alpecin Forte" data-prijs="15" type="button">
+            In winkelmandje
+        </button>
+    </div>
+
+    <div class="product">
+        <div class="product-foto">
+            <img src="images/biopytho.jpeg" alt="Freezing bio phyto">
+        </div>
+        <h3>Freezing Bio Phyto</h3>
+        <p class="product-prijs">€17,00</p>
+        <button class="bestel-product" data-naam="Freezing Bio Phyto" data-prijs="17" type="button">
+            In winkelmandje
+        </button>
+    </div>
+
+    <div class="product">
+        <div class="product-foto">
+            <img src="images/brylcreem.jpeg" alt="Brylcreem Light Glossy Hold">
+        </div>
+        <h3>Brylcreem Light Glossy Hold</h3>
+        <p class="product-prijs">€9,99</p>
+        <button class="bestel-product" data-naam="Brylcreem Light Glossy Hold" data-prijs="9.99" type="button">
+            In winkelmandje
+        </button>
+    </div>
+
+    <div class="product">
+        <div class="product-foto">
+            <img src="images/pasta.jpeg" alt="Got2b Phenomenal pâte modelante résultat naturel">
+        </div>
+        <h3>got2b Phenomenal Pâte Modelante Résultat Naturel</h3>
+        <p class="product-prijs">€7,00</p>
+        <button class="bestel-product" data-naam="got2b Phenomenal Pâte Modelante Résultat Naturel" data-prijs="7" type="button">
+            In winkelmandje
+        </button>
+    </div>
+
+    <div class="product">
+        <div class="product-foto">
+            <img src="images/groenhaarspray.jpeg" alt="Syoss max hold hair spray 48h mega strong hold">
+        </div>
+        <h3>Syoss Max Hold Hair Spray 48H Mega Strong Hold</h3>
+        <p class="product-prijs">€8,50</p>
+        <button class="bestel-product" data-naam="Syoss Max Hold Hair Spray 48H Mega Strong Hold" data-prijs="8.50" type="button">
+            In winkelmandje
+        </button>
+    </div>
+
+    <div class="product">
+        <div class="product-foto">
+            <img src="images/volume.jpeg" alt="Syoss Volume mousse long lasting hold">
+        </div>
+        <h3>Syoss Volume Mousse Long Lasting Hold</h3>
+        <p class="product-prijs">€6,00</p>
+        <button class="bestel-product" data-naam="Syoss Volume Mousse Long Lasting Hold" data-prijs="6" type="button">
+            In winkelmandje
+        </button>
+    </div>
+
+    <div class="product">
+        <div class="product-foto">
+            <img src="images/curlmousse.jpeg" alt="Syoss curl control mousse bounce hold">
+        </div>
+        <h3>Syoss Curl Control Mousse Bounce Hold</h3>
+        <p class="product-prijs">€6,00</p>
+        <button class="bestel-product" data-naam="Syoss Curl Control Mousse Bounce Hold" data-prijs="6" type="button">
+            In winkelmandje
+        </button>
+    </div>
+
+    <div class="product">
+        <div class="product-foto">
+            <img src="images/brushingspray.jpeg" alt="Brushing spray Guy Lafayette">
+        </div>
+        <h3>Brushing Spray Guy Lafayette</h3>
+        <p class="product-prijs">€5,00</p>
+        <button class="bestel-product" data-naam="Brushing Spray Guy Lafayette" data-prijs="5" type="button">
+            In winkelmandje
+        </button>
+    </div>
+
+    <div class="product">
+        <div class="product-foto">
+            <img src="images/gelspray.jpeg" alt="Gel spray Guy Lafayette">
+        </div>
+        <h3>Gel Spray Guy Lafayette</h3>
+        <p class="product-prijs">€5,00</p>
+        <button class="bestel-product" data-naam="Gel Spray Guy Lafayette" data-prijs="5" type="button">
+            In winkelmandje
+        </button>
+    </div>
+
+    <div class="product">
+        <div class="product-foto">
+            <img src="images/scheerborstel.jpeg" alt="Vergulde hand orginele scheerkwast">
+        </div>
+        <h3>Vergulde Hand Originele Scheerkwast</h3>
+        <p class="product-prijs">€21,50</p>
+        <button class="bestel-product" data-naam="Vergulde Hand Originele Scheerkwast" data-prijs="21.50" type="button">
+            In winkelmandje
+        </button>
+    </div>
+
+</div>
+</section>
+</main>
+
+
+<footer>
+    <p>© 2026 Kwaffeur Francois</p>
+    <p class="gemaakt-door">Website ontworpen & ontwikkeld door Lola-Grace Geerts</p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<div id="winkelmandje" class="winkelmandje">
+    <button id="mandje-sluiten" type="button">✕</button>
+
+    <h2>Jouw winkelmandje</h2>
+
+    <div id="mandje-inhoud">
+        <p>Je winkelmandje is leeg.</p>
+    </div>
+
+    <div class="mandje-totaal">
+        Totaal: €<span id="mandje-totaal">0</span>
+    </div>
+
+    <button id="bestellen-knop" type="button">
+        Bestelling plaatsen
+    </button>
+
+<div id="bestelling-formulier" style="display: none;">
+    <h3>Gegevens voor je bestelling</h3>
+
+    <label for="bestel-naam">Naam</label>
+    <input type="text" id="bestel-naam" required>
+
+    <label for="bestel-telefoon">Telefoonnummer</label>
+    <input type="tel" id="bestel-telefoon" required>
+
+    <p>📍 Ophalen in het salon</p>
+    <p>💳 Betalen bij het ophalen</p>
+
+    <button id="bestelling-versturen" type="button">
+        Bestelling bevestigen
+    </button>
+</div>
+
+
+</div>
+
+<div id="foto-popup">
+    <button id="foto-popup-sluiten" type="button">✕</button>
+    <img id="grote-foto" src="" alt="Groot weergegeven kapsel">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
